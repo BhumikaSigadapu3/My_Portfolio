@@ -8,7 +8,9 @@
 }
 
 @include mediaMd{
+    
     main{
+        display: grid;
         align-items: center;
         text-align: center;
 
@@ -45,6 +47,14 @@
         }
     }
     
+    .about-info {
+        grid-template-areas: 
+         'bioimage'
+         'bio'
+         'heading'
+         'job1';
+        grid-template-columns: 1fr;
+    }
 }
 
 @include mediaSm{
