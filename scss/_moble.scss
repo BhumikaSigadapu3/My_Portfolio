@@ -1,10 +1,15 @@
 @use 'config' as *;
 @include mediaXL{
-
+    .projects{
+        align-items:center;
+        grid-template-columns: repeat(4, 1fr);
+    }
 }
 
 @include mediaLg{
-    
+    .projects{
+        grid-template-columns: repeat(3, 1fr);
+    }
 }
 
 @include mediaMd{
@@ -55,10 +60,16 @@
          'job1';
         grid-template-columns: 1fr;
     }
+    .projects{
+        grid-template-columns: repeat(2, 1fr);
+    }
 }
 
 @include mediaSm{
     main#home h1{
         margin-top: 10vh;
+    }
+    .projects{
+        grid-template-columns: 1fr;
     }
 }
