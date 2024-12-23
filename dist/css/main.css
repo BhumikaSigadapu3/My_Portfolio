@@ -180,6 +180,15 @@ main .icons {
   margin-top: 1rem;
   margin-bottom: 25px;
 }
+main .icons a .leetcodeIcon{
+  filter: invert(1) brightness(2);
+  width: 30px;
+  height: 30px;
+}
+main .icons a .leetcodeIcon:hover{
+  filter: invert(79%) sepia(95%) saturate(536%) hue-rotate(0deg) brightness(103%);
+  transition: all 0.5s ease-out;
+}
 main .icons a {
   padding: 0.4rem;
 }
@@ -206,7 +215,7 @@ main#home h1 {
 
 .about-info {
   display: grid;
-  grid-gap: 30px;
+  grid-gap: 0px;
   grid-template-areas: "bioimage bio" "heading heading" "job1 job1";
   grid-template-columns: repeat(2, 1fr);
 }
@@ -218,7 +227,7 @@ main#home h1 {
 }
 .about-info .bio {
   grid-area: bio;
-  font-size: 1.5rem;
+  font-size: 1rem;
 }
 .about-info .heading {
   grid-area: heading;
@@ -232,7 +241,47 @@ main#home h1 {
   padding: 0.5rem;
   border-bottom: #eece1a 5px solid;
 }
+.about-info .tab-titles{
+  display:flex;
+  margin: 20px 0 40px;
 
+}
+.about-info .tab-titles .tab-links{
+  margin-right: 100px;
+  font-size: 15px;
+  font-weight: 500;
+  cursor: pointer;
+  position: relative;
+}
+.about-info .tab-titles .tab-links::after{
+  content: '';
+  width: 0;
+  height: 3px;
+  background: #eece1a;
+  position: absolute;
+  left: 0;
+  bottom: -8px;
+  transition: 0.5s;
+}
+.about-info .tab-titles .tab-links.active-link::after{
+  width: 100%;
+}
+.about-info .tab-contents ul li{
+  list-style: none;
+  margin: 10px 0;
+
+}
+.about-info .tab-contents ul li span{
+  color: #d4b717;
+  font-size: 14px;
+}
+.about-info .tab-contents{
+  display: none;
+
+}
+.about-info .tab-contents.active-tab{
+  display: block;
+}
 .projects {
   display: grid;
   grid-gap: 0.9rem;
@@ -291,6 +340,21 @@ main#home h1 {
   background: rgb(195.5, 195.5, 195.5);
   color: #333;
 }
+.contact-down form{
+  width: 100%;
+
+}
+form input, form textarea{
+  width: 100%;
+  border: 0;
+  outline: none;
+  background: rgb(55.25, 55.25, 55.25);;
+  padding: 15px;
+  margin: 15px;
+  color: #fff;
+  font-size: 18px;
+  border-radius: 6px;
+}
 
 #main-footer {
   text-align: center;
@@ -298,6 +362,24 @@ main#home h1 {
   background: rgb(42.5, 42.5, 42.5);
   color: #fff;
   height: 60px;
+}
+.contact-down .btn.btn2{
+  color: #fff;
+  font-size: 20px;
+  display: inline-block;
+  background: rgba(73.1, 73.1, 73.1, 0.5);
+  margin-left: 20px;
+}
+.contact-down .btn.btn2:hover{
+  background: #eece1a;
+  z-index: 2;
+  color: #000;
+  transition: all 0.5s ease-out;
+}
+#msg{
+  margin-top: -5px;
+  margin-left: 30px;
+  display: block; 
 }
 
 @media screen and (min-width: 1171px) {
