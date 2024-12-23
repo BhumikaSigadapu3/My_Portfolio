@@ -188,6 +188,55 @@ main{
     color: #333;
 }
 
+.contact-down {
+  form {
+    width: 100%;
+
+    input,
+    textarea {
+      width: 100%;
+      border: 0;
+      outline: none;
+      background: rgb(55.25, 55.25, 55.25);
+      padding: 15px;
+      margin: 15px;
+      color: #fff;
+      font-size: 18px;
+      border-radius: 6px;
+    }
+  }
+
+  .btn.btn2 {
+    color: #fff;
+    font-size: 20px;
+    display: inline-block;
+    background: rgba(73.1, 73.1, 73.1, 0.5);
+    margin-left: 20px;
+
+    &:hover {
+      background: #eece1a;
+      z-index: 2;
+      color: #000;
+      transition: all 0.5s ease-out;
+    }
+  }
+}
+
+#main-footer {
+  text-align: center;
+  padding: 1rem;
+  background: rgb(42.5, 42.5, 42.5);
+  color: #fff;
+  height: 60px;
+}
+
+#msg {
+  margin-top: -5px;
+  margin-left: 30px;
+  display: block;
+}
+
+
 #main-footer{
     text-align: center;
     padding: 1rem;
