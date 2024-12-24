@@ -89,6 +89,24 @@ main{
     }
 }
 
+main {
+  .icons {
+    a {
+      .leetcodeIcon {
+        filter: invert(1) brightness(2);
+        width: 30px;
+        height: 30px;
+
+        &:hover {
+          filter: invert(79%) sepia(95%) saturate(536%) hue-rotate(0deg) brightness(103%);
+          transition: all 0.5s ease-out;
+        }
+      }
+    }
+  }
+}
+
+
 .about-info{
     display: grid;
     grid-gap: 30px;
