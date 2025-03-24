@@ -29,8 +29,8 @@ If you'd like to run this project locally:
 
 ## 📬 Contact Me
 Feel free to reach out if you have any feedback or opportunities:
-- **Email:** [your-email@example.com](mailto:bhumikasigadapu3@gmail.com)
-- **LinkedIn:** [Your LinkedIn](https://www.linkedin.com/in/bhumika-sigadapu-44b34a280/)
+- [**Email**](mailto:bhumikasigadapu3@gmail.com)
+- [**LinkedIn**](https://www.linkedin.com/in/bhumika-sigadapu-44b34a280/)
 
 
 ---
